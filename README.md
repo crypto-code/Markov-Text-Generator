@@ -33,14 +33,13 @@ python genText.py -w 100 -n 5 -d pdict.txt
 ```
 
 ## Generated Sample
-```
-For the college years we will flourish and that is due to the continued growth and political democracy.
-The life of Abraham Lincoln.
-For a second century we struggled to hold together the first century we labored to establish a unity of the Lord are true and righteous altogether.” With malice toward none, with charity for all, with firmness in the Capital of the price that has been the New World in all tongues, to all our people.
-We will step up our effort to make it work—work with us, not over us; to stand still.
-The answer was waiting for me in the wisest and most momentous occasion; and yet, in the last 4 years.
-Most important of all, in this Chamber are among men whose first love is their country, men who believe that together, with God's help, we can have a strong and we have resolved in friendship our disputes with our neighbors of the individual have been awakened by the bondsman's two hundred and fifty years of public service, practically all of them would 'make' war rather than let it perish, and the fortitude to make the Potomac a model of government are justly considered, perhaps, as 'deeply', as 'finally', staked on the work a man who might have been constantly called forth on every point and phase of the republican model of government is subject to the Congress.
-All of us to enlarge the meaning of his mind and skills.
+>For the college years we will flourish and that is due to the continued growth and political democracy.
+>The life of Abraham Lincoln.
+>For a second century we struggled to hold together the first century we labored to establish a unity of the Lord are true and righteous >altogether.” With malice toward none, with charity for all, with firmness in the Capital of the price that has been the New World in >all tongues, to all our people.
+>We will step up our effort to make it work—work with us, not over us; to stand still.
+>The answer was waiting for me in the wisest and most momentous occasion; and yet, in the last 4 years.
+>Most important of all, in this Chamber are among men whose first love is their country, men who believe that together, with God's help, >we can have a strong and we have resolved in friendship our disputes with our neighbors of the individual have been awakened by the >bondsman's two hundred and fifty years of public service, practically all of them would 'make' war rather than let it perish, and the >fortitude to make the Potomac a model of government are justly considered, perhaps, as 'deeply', as 'finally', staked on the work a man >who might have been constantly called forth on every point and phase of the republican model of government is subject to the Congress.
+>All of us to enlarge the meaning of his mind and skills.
 We shall extend it—and we shall suppose that American slavery is one of the whole population were colored slaves, not distributed generally over the Union, but localized in the interest of Europe.
 All dreaded it, all sought to avert it.
 A nation, like a person, has a government—not the other way around.
@@ -54,7 +53,6 @@ We are there, first, because a friendly nation has become too complex to be done
 The frustrations of the governed.
 We seek full employment opportunity for every sacrifice that Martin Treptow and so many thousands of prayer meetings are being held on this subject, in which they originated.
 They require different attitudes and different answers.
-```
 
 # G00D LUCK
 
