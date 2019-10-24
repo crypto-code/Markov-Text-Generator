@@ -7,7 +7,7 @@ A Markov chain is a stochastic model describing a sequence of possible events in
 Using Probabilistic connections a Markov Chain can be used to generate text.
 
 ## Training Data
-The data should be in form of a text file. An example of presidential speeches has been provied.
+The data should be in form of a text file. An example of presidential speeches has been provied in the Presidents folder.
 
 ## Generating a Dictionary
 To generate a dictionary file, you'll need to run the genDict.py script as follows:
