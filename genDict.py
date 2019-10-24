@@ -13,11 +13,11 @@ def checkargs():
 	fileList = []
 
 	if len(sys.argv) < 3:
-		print( "Usage: " + sys.argv[0] + " -k <Key lenth> -i <input files> -d <dictionary file> ")
+		print( "Usage: " + sys.argv[0] + " -k <Key lenth> -i <input files> -o <dictionary file> ")
 		exit(0)
 	else:
 		arg = {}
-		options = getopt.getopt(sys.argv[1:], 'k:i:d:')
+		options = getopt.getopt(sys.argv[1:], 'k:i:o:')
 		for item in options[0]:
 			if(item):
 				arg[ item[0] ] = item[1]
