@@ -11,23 +11,23 @@ The data should be in form of a text file. An example of presidential speeches h
 
 ## Generating a Dictionary
 To generate a dictionary file, you'll need to run the genDict.py script as follows:
-'''
+```
 python genDict.py -k <key length> -i <input files> -d <output dictionary file>
-'''
+```
   
 For eg:
-'''
+```
 python genDict.py -k 2 -i Presidents\*.* -d pdict.txt
-'''
+```
 **Note: Wild Card characters can be used for input**
 
 ## Generating the Text
 To generate the text, you'll need to run the genText.py script as follows:
-'''
+```
 python genText.py -w <max word count> -n <max line count> -d <dictionary file>
-'''
+```
 
 For eg:
-'''
+```
 python genText.py -w 100 -n 5 -d pdict.txt
-'''
+```
