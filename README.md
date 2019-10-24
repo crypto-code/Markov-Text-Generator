@@ -31,3 +31,8 @@ For eg:
 ```
 python genText.py -w 100 -n 5 -d pdict.txt
 ```
+
+# G00D LUCK
+
+For doubts email me at:
+atinsaki@gmail.com
