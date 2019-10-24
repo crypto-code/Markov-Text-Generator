@@ -21,14 +21,42 @@ class Markov(object):
 	def loadDictionary(self, dictFile):
 		with open(dictFile, 'r') as inf:
 			self.table = eval(inf.read())
-		 print("Loaded dictionary file:"+dictFile)
-		 
+
 	def readFile(self, filename, fileEncoding="utf-8"):
 		with  open(filename, "r", encoding=fileEncoding) as file:
 			strLine = " ".join(file)
 			self.processSection(strLine)
 
-        def genText(self):	
+	def processSection(self,line ):
+		sent_text = nltk.sent_tokenize(line) #gives us a list of sentences
+
+		for sentence in sent_text:
+			self.inputLineCount = self.inputLineCount  + 1
+
+			tokens = sentence.split()
+			keyList = [ ];
+			
+			#Adds a special key with just beginning words
+			self.table.setdefault( '#BEGIN#', []).append(tokens[0:self.order ]);
+
+			#loops through each word, and if we have enough to add dictionary item, then add
+			for item in tokens:
+				if len(keyList) < self.order :  
+					keyList.append(item)
+					continue
+				
+				#If we already have the item, then add it, otherwise add to empty list
+				self.table.setdefault( tuple(keyList), []).append(item)
+
+				#Remove the first word and push last word on to it
+				keyList.pop(0)
+				keyList.append(item)
+				self.inputWordCount = self.inputWordCount + 1
+
+	def setMaxWordInSentence(self, maxWordInSentence):
+		self.maxWordInSentence = maxWordInSentence
+
+	def genText(self):	
 		key = list(random.choice(  self.table['#BEGIN#'] ))
 		genStr = " ".join( key )
 		for _ in range( self.maxWordInSentence ):
@@ -42,35 +70,6 @@ class Markov(object):
 			key.append(newVal)
 
 		return genStr
-	def processSection(self,line ):
-	# global lineCount, wordCount, table, keyLen
-		sent_text = nltk.sent_tokenize(line) # this gives us a list of sentences
-
-		for sentence in sent_text:
-			self.inputLineCount = self.inputLineCount  + 1
-
-			tokens = sentence.split()
-			keyList = [ ];
-			
-			#Add a special key with just beginning words
-			self.table.setdefault( '#BEGIN#', []).append(tokens[0:self.order ]);
-
-			#loop through each word, and if we have enough to add dictionary item, then add
-			for item in tokens:
-				if len(keyList) < self.order :  #not enough items
-					keyList.append(item)
-					continue
-				
-				#If we already have the item, then add it, otherwise add to new list
-				self.table.setdefault( tuple(keyList), []).append(item)
-
-				#Remove the first word and push last word on to it
-				keyList.pop(0)
-				keyList.append(item)
-				self.inputWordCount = self.inputWordCount + 1
-
-	def setMaxWordInSentence(self, maxWordInSentence):
-		self.maxWordInSentence = maxWordInSentence
 
 	def getLineCount(self):
 		return self.inputLineCount

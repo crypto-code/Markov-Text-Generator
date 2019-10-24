@@ -21,7 +21,6 @@ def checkargs():
 		for item in options[0]:
 			if(item):
 				arg[ item[0] ] = item[1]
-		# pprint.pprint(arg)
 
 		keyLen = int(arg[ '-k'])
 		dictFile = arg['-d']
@@ -37,8 +36,8 @@ def main():
 
 	(keyLen, fileList, dictFile) = checkargs()
 
-	#Create new Markov class
-	markovObj = .Markov(keyLen)
+	#Creates new Markov class
+	markovObj = markov.Markov(keyLen)
 	
 	for file in fileList:	
 		try:
