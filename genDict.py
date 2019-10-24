@@ -13,7 +13,7 @@ def checkargs():
 	fileList = []
 
 	if len(sys.argv) < 3:
-		print( "Usage: " + sys.argv[0] + " -k <Key lenth> -i <input files> -o <dictionary file> ")
+		print( "Usage: " + sys.argv[0] + " -k <Key lenth> -i <input files> -o <output dictionary file> ")
 		exit(0)
 	else:
 		arg = {}
